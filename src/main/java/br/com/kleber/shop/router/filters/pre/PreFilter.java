@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * Created by kleber on 3/28/17.
+ *
+ * Filtro para realizar log das chamadas aos microservicos.
  */
 public class PreFilter extends ZuulFilter {
 

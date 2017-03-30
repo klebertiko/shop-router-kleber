@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: shop-router
+
+server:
+  port: 8080
+
+zuul:
+  routes:
+    welcome:
+      path: /welcome/**
+      url: http://localhost:9090/welcome
+    shop:
+          path: /shop/**
+          url: http://localhost:9090/shop
